@@ -1,3 +1,5 @@
+@import "/assets/styles/modules/variables";
+
 html,
 body {
     min-height: 100vh;
@@ -14,6 +16,26 @@ a {
 
 * {
     box-sizing: border-box;
+}
+
+.btn {
+    color: #fff;
+    display: table;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: transparent;
+    transition: all 0.3s;
+
+    &:hover {
+        color: $lightBlack;
+        border: 1px solid $lightBlack;
+        background-color: #fff;
+        transition: all 0.3s;
+    }
 }
 
 @import "assets/styles/partials/mainSlider";
