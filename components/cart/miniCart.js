@@ -1,8 +1,8 @@
 import {FaShoppingBag} from "react-icons/fa";
 
-const MiniCart = () => {
+const MiniCart = (props) => {
     return (
-        <div className="mini-cart">
+        <div className={props.className}>
             <FaShoppingBag />
         </div>
     );

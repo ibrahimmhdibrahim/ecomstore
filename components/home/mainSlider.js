@@ -13,7 +13,7 @@ const MainSlider = () => {
     }
 
     return (
-        <Slider className="mainSlider container" dots={true}>
+        <Slider className="mainSlider container" dots={true} arrows={false}>
             {renderSlides()}
         </Slider>
     );

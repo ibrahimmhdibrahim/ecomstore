@@ -13,7 +13,7 @@ const Header = () => {
                         <img src="/images/logo.png" alt="logo" />
                     </div>
                     <NavLinks />
-                    <MiniCart />
+                    <MiniCart className={classes.miniCart} />
                 </div>
             </header>
         </>
