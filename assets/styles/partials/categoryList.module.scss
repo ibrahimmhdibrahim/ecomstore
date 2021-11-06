@@ -1,0 +1,37 @@
+.categoryContainer {
+    display: flex;
+    margin: 50px auto;
+
+    .categoryColumn {
+        flex-grow: 1;
+        padding: 0 30px 0 0;
+
+        &:nth-child(2) {
+            padding: 0 20px 0 10px;
+        }
+
+        &:nth-child(3) {
+            padding: 0 10px 0 20px;
+        }
+
+        &:last-child {
+            padding: 0 0 0 30px;
+        }
+
+        .categoryBlock {
+            position: relative;
+
+            h3 {
+                position: absolute;
+                bottom: 20px;
+                left: 10px;
+                margin: 0;
+                color: #fff;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

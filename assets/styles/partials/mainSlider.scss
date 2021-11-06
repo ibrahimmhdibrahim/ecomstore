@@ -1,6 +1,8 @@
 @import "assets/styles/modules/variables";
 
-.mainSlider {
+.mainSlider.slick-slider {
+    box-sizing: content-box;
+
     .slide {
         outline: none;
     }
