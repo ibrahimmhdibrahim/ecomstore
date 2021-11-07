@@ -1,10 +1,7 @@
 .categoryContainer {
-    display: flex;
     margin: 50px auto;
 
     .categoryColumn {
-        flex-grow: 1;
-        padding: 0 20px;
 
         .categoryBlock {
             position: relative;
