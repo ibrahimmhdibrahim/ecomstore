@@ -2,17 +2,17 @@
 
 .collectionContainer {
     display: flex;
+    margin: 40px 0;
     background-color: $lightBlack;
 
     .collectionColumn {
         flex: 1 1 0;
+        display: inline-flex;
 
         .content {
-            position: relative;
             color: #fff;
-            top: 50%;
+            margin: auto;
             text-align: center;
-            transform: translateY(-50%);
         }
 
         img {

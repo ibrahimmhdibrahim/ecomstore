@@ -1,0 +1,12 @@
+@import "./assets/styles/modules/variables";
+
+.featuredProducts {
+    padding: 30px 0 60px;
+    background-color: $white;
+
+    h2 {
+        margin: 0;
+        padding: 20px 0 50px;
+        text-align: center;
+    }
+}

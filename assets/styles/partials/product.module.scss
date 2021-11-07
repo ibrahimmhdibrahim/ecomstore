@@ -1,0 +1,45 @@
+@import "./assets/styles/modules/variables";
+
+.productBlock {
+    position: relative;
+
+    &:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        transition: all .2s ease-out;
+        box-shadow: inset 0 0 0 2px $lightGrey;
+    }
+
+    &:hover:before {
+        transition: all .2s ease-out;
+        box-shadow: inset 0 0 0 4px $grey;
+    }
+
+    img {
+        display: block;
+    }
+
+    .content {
+        overflow: hidden;
+        padding: 10px;
+        background-color: #fff;
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
