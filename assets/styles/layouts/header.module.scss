@@ -7,6 +7,7 @@
     .container {
         display: flex;
         flex-wrap: wrap;
+        padding: 0 40px;
 
         .logo {
             flex-grow: 1;
@@ -44,12 +45,6 @@
                     }
                 }
             }
-        }
-
-        .miniCart {
-            display: flex;
-            flex-grow: 1;
-            align-items: center;
         }
     }
 }

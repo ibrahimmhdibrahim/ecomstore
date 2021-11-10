@@ -1,0 +1,20 @@
+.miniCart {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+
+    .miniCartContainer {
+        width: 100%;
+        text-align: right;
+
+        .miniCartBtn {
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+
+            svg {
+                color: #fff;
+            }
+        }
+    }
+}
