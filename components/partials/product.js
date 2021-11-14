@@ -4,14 +4,14 @@ const addToCartHandler = () => {
     console.log("ADDED TO CART");
 }
 
-const Product = () => {
+const Product = (props) => {
     return (
         <div className={classes.productBlock}>
-            <img src="https://via.placeholder.com/350x350" />
+            <img src={props.image} />
             <div className={classes.content}>
-                <h3>The Amazing Watch</h3>
-                <p>Unique and great functionalities perfect for business usage</p>
-                <div className={classes.price}>89$</div>
+                <h3>{props.title}</h3>
+                <p>{props.smallDescription}</p>
+                <div className={classes.price}>{props.price}$</div>
                 <button className={classes.productBtn} onClick={addToCartHandler}>
                     ADD TO CART
                 </button>

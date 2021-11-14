@@ -6,7 +6,7 @@ const MainSlider = () => {
 
     const renderSlides = () => {
         return [1, 2, 3].map(num => (
-            <div className="slide">
+            <div className="slide" key={num}>
                 <img src="https://via.placeholder.com/1440x500" />
             </div>
         ));
