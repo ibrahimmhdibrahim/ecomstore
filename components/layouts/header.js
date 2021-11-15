@@ -1,6 +1,6 @@
 import HeaderBar from "./headerBar";
 import NavLinks from "./navigation";
-import MiniCart from "../cart/miniCart";
+import MiniCartBtn from "../cart/miniCartBtn";
 
 import classes from "../../assets/styles/layouts/header.module.scss";
 
@@ -14,7 +14,7 @@ const Header = () => {
                         <img src="/images/logo.png" alt="logo" />
                     </div>
                     <NavLinks />
-                    <MiniCart />
+                    <MiniCartBtn />
                 </div>
             </header>
         </>

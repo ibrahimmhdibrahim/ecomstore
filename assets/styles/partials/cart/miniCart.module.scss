@@ -1,19 +1,50 @@
+@import "/assets/styles/modules/variables";
+
 .miniCart {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: $lightBlack;
 
     .miniCartContainer {
-        width: 100%;
-        text-align: right;
+        max-width: 800px;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+        background-color: $lightGrey;
 
-        .miniCartBtn {
-            cursor: pointer;
-            border: none;
-            background-color: transparent;
+        .miniCartItems {
+            margin: 0;
+            height: 100%;
+            padding: 0 20px;
+            overflow-y: scroll;
+            list-style-type: none;
 
-            svg {
-                color: #fff;
+            .miniCartItem {
+                display: flex;
+                text-align: left;
+
+                img {
+                    max-width: 100px;
+                    margin: 0 20px 0 0;
+                }
+
+                .miniCartItemDescription {
+                    display: inline-flex;
+                    margin: auto;
+                    flex-direction: column;
+                    flex: 1;
+
+                    h3 {
+                        margin: 0;
+                    }
+
+                    span {
+                    }
+                }
             }
         }
     }

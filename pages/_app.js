@@ -2,12 +2,17 @@ import "../assets/styles/globals.scss";
 import Header from "../components/layouts/header";
 import Footer from "../components/layouts/footer";
 
-function MyApp({ Component, pageProps }) {
+import {Provider} from "react-redux";
+import store from "../store";
+
+function MyApp({Component, pageProps}) {
     return (
         <>
-            <Header />
+            <Provider store={store}>
+                <Header/>
                 <Component {...pageProps} />
-            <Footer />
+                <Footer/>
+            </Provider>
         </>
     );
 }

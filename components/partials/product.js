@@ -1,13 +1,25 @@
 import classes from "../../assets/styles/partials/product.module.scss";
 
-const addToCartHandler = () => {
-    console.log("ADDED TO CART");
-}
+import {cartActions} from "../../store";
+import {useDispatch} from "react-redux";
 
 const Product = (props) => {
+    const dispatch = useDispatch();
+
+    const addToCartHandler = () => {
+        dispatch(cartActions.addToCart({
+            item: {
+                id: props.id,
+                title: props.title,
+                price: props.price,
+                image: props.image,
+            },
+        }));
+    }
+
     return (
         <div className={classes.productBlock}>
-            <img src={props.image} />
+            <img src={props.image}/>
             <div className={classes.content}>
                 <h3>{props.title}</h3>
                 <p>{props.smallDescription}</p>

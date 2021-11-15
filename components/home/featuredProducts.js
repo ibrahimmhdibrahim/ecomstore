@@ -21,7 +21,7 @@ const FeaturedProducts = () => {
     const productsList = () => {
         return featuredProducts.map((product) => (
             <div key={product.id} className={grid.columnFlex}>
-                <Product title={product.name} smallDescription={product.smallDescription} price={product.price} image={product.image} />
+                <Product id={product.id} title={product.name} smallDescription={product.smallDescription} price={product.price} image={product.image} />
             </div>
         ));
     }
