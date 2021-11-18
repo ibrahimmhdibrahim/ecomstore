@@ -13,7 +13,7 @@ const MiniCart = (props) => {
                 <ul className={classes.miniCartItems}>
                     {
                         cart.items.map(item =>
-                             <MiniCartItem id={item.id} title={item.title} image={item.image} price={item.price} />
+                             <MiniCartItem key={item.id} id={item.id} title={item.title} image={item.image} price={item.price} quantity={item.quantity} />
                         )
                     }
                 </ul>

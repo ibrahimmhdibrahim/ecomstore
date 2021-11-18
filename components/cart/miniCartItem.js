@@ -7,6 +7,7 @@ const MiniCartItem = (props) => {
             <div className={classes.miniCartItemDescription}>
                 <h3>{props.title}</h3>
                 <span>{props.price}</span>
+                <span>{props.quantity}</span>
             </div>
         </li>
     );

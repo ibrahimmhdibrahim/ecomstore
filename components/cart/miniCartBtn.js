@@ -22,7 +22,7 @@ const MiniCartBtn = () => {
                     </button>
                 </div>
             </div>
-            {cartShown && <MiniCart toggleCart={toggleCartHandler} />}
+            {cartShown && <MiniCart toggleCart={toggleCartHandler}/>}
         </>
     );
 }
