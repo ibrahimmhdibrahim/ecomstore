@@ -1,4 +1,5 @@
 import {createSlice, configureStore} from "@reduxjs/toolkit";
+import {act} from "react-dom/test-utils";
 
 let initialState = {items: [], cartTotal: 0};
 
@@ -12,12 +13,18 @@ const cartSlice = createSlice({
                 state.items.push(action.payload.item);
             }
             else {
-                checkItem.quantity += action.payload.item.quantity;
+                checkItem.quantity = checkItem.quantity + action.payload.item.count;
+                if (checkItem.quantity <=0 ) {
+                    state.items = state.items.filter(item => item.id !== action.payload.item.id);
+                }
             }
         },
         removeFromCart(state, action) {
             state.items = state.items.filter(item => item.id !== action.payload.item.id);
         },
+        clearCart(state) {
+            state = initialState;
+        }
     }
 });
 

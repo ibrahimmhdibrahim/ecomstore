@@ -9,7 +9,9 @@ const MiniCart = (props) => {
     return (
         <div className={classes.miniCart}>
             <div className={classes.miniCartContainer}>
-                <div onClick={props.toggleCart}>Close</div>
+                <div className={classes.cartHeader} onClick={props.toggleCart}>
+                    <div>x</div>YOUR CART
+                </div>
                 <ul className={classes.miniCartItems}>
                     {
                         cart.items.map(item =>
